@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/linedpaper">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculus Quiz"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="By: Karthik, Allen, and Roya"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Final Score:"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:id="@+id/final_score"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="endscore"
+        android:text="Submit Quiz"
+        app:iconTint="#C52323"
+        android:textColor="#000000"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make sure to scroll down to see all questions, (use bottom half of screen to scroll), and once done with all 7 questions hit submit quiz to see results. Good luck!"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. What is a derivative?"
+                android:textSize="20dp"
+                android:gravity="center_horizontal"
+                android:textColor="#654321"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="a. the slope of the tangent line"
+                    tools:layout_editor_absoluteX="50dp"
+                    tools:layout_editor_absoluteY="0dp"
+                    android:onClick="addcount"
+                    android:backgroundTint="#90ee90"
+                    android:textColor="#000000"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="b. the x-intercept"
+                    tools:layout_editor_absoluteX="50dp"
+                    tools:layout_editor_absoluteY="40dp"
+                    android:backgroundTint="#90ee90"
+                    android:textColor="#000000"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="c. the y-intercept"
+                    tools:layout_editor_absoluteX="50dp"
+                    tools:layout_editor_absoluteY="80dp"
+                    android:backgroundTint="#90ee90"
+                    android:textColor="#000000"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="d. the slope of the line"
+                    tools:layout_editor_absoluteX="50dp"
+                    tools:layout_editor_absoluteY="120dp"
+                    android:backgroundTint="#90ee90"
+                    android:textColor="#000000"
+                    />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. What is a limit?"
+                android:textSize="20dp"
+                android:gravity="center_horizontal"
+                android:textColor="#654321"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="a. the point at which the graph cannot pass"
+                    android:backgroundTint="#ADD8E6"
+                    android:textColor="#000000"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="b. the x-value a graph can go to"
+                    android:backgroundTint="#ADD8E6"
+                    android:textColor="#000000"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text = "c. the value that a function approaches as the input approaches some value"
+                    android:onClick="addcount"
+                    android:backgroundTint="#ADD8E6"
+                    android:textColor="#000000"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="d. the last point that the graph approaches"
+                    android:backgroundTint="#ADD8E6"
+                    android:textColor="#000000"
+                    />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. What is the derivative of x^2?"
+                android:textSize="20dp"
+                android:gravity="center_horizontal"
+                android:textColor="#654321"
+                android:textStyle="bold"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="a. 2x"
+                    android:onClick="addcount"
+                    android:backgroundTint="#507d96"
+                    android:textColor="#000000"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text = "b. 4x"
+                    android:backgroundTint="#507d96"
+                    android:textColor="#000000"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="c. x^3"
+                    android:backgroundTint="#507d96"
+                    android:textColor="#000000"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="d. 3x^2"
+                    android:backgroundTint="#507d96"
+                    android:textColor="#000000"
+                    />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. What is a one sided limit?"
+                android:textSize="20dp"
+                android:gravity="center_horizontal"
+                android:textColor="#654321"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text = "a. the limit of the graph that does not change signs"
+                    android:backgroundTint="#CBC3E3"
+                    android:textColor="#000000"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="b. a limit that is only positive"
+                    android:backgroundTint="#CBC3E3"
+                    android:textColor="#000000"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="c. the limit of the graph that is entering from the right"
+                    android:backgroundTint="#CBC3E3"
+                    android:textColor="#000000"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="d. either of the two limits of a function f(x) of a real variable x as x approaches a specified point either from the left or from the right"
+                    android:onClick="addcount"
+                    android:backgroundTint="#CBC3E3"
+                    android:textColor="#000000"
+                    />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. What is a discontinuity?"
+                android:textSize="20dp"
+                android:gravity="center_horizontal"
+                android:textColor="#654321"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="a. the point where the function reaches zero"
+                    android:backgroundTint="#107840"
+                    android:textColor="#000000"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="b. any point at which a function fails to be continuous"
+                    android:onClick="addcount"
+                    android:backgroundTint="#107840"
+                    android:textColor="#000000"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="c. any point where the function crosses the x-axis"
+                    android:backgroundTint="#107840"
+                    android:textColor="#000000"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="the point where the function ends"
+                    android:backgroundTint="#107840"
+                    android:textColor="#000000"
+                    />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6. What is the derivative of 2x + 5?"
+                android:textSize="20dp"
+                android:gravity="center_horizontal"
+                android:textColor="#654321"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="a. 2"
+                    android:onClick="addcount"
+                    android:backgroundTint="#2152d9"
+                    android:textColor="#000000"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="b. 5"
+                    android:backgroundTint="#2152d9"
+                    android:textColor="#000000"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="c. x^2"
+                    android:backgroundTint="#2152d9"
+                    android:textColor="#000000"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="d. 3x"
+                    android:backgroundTint="#2152d9"
+                    android:textColor="#000000"
+                    />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7. What is the derivative of x^3 - 4x + 6?"
+                android:textSize="20dp"
+                android:gravity="center_horizontal"
+                android:textColor="#654321"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="a. 2x^3 - 4"
+                    android:backgroundTint="#FFA500"
+                    android:textColor="#000000"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="b. 6x^3"
+                    android:backgroundTint="#FFA500"
+                    android:textColor="#000000"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4x^3"
+                    android:backgroundTint="#FFA500"
+                    android:textColor="#000000"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3x^2 - 4"
+                    android:onClick="addcount"
+                    android:backgroundTint="#FFA500"
+                    android:textColor="#000000"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

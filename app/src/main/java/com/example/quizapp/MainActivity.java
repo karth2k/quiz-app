@@ -28,4 +28,14 @@ public class MainActivity extends AppCompatActivity {
         textviewfinal.setText("Final Score: " + count + "/7");
     }
 
+    public void countreset(View view){
+        resetscore();
+    }
+
+    private void resetscore() {
+        count = 0;
+        TextView textviewfinal = (TextView) findViewById(R.id.final_score);
+        textviewfinal.setText("Final Score: ");
+    }
+
 }

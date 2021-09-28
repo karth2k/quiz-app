@@ -51,7 +51,9 @@
         android:onClick="endscore"
         android:text="Submit Quiz"
         app:iconTint="#C52323"
-        android:textColor="#000000"/>
+        android:textColor="#000000"
+        android:backgroundTint="#FFFF00"
+        />
 
 
     <TextView
@@ -62,6 +64,15 @@
         android:textColor="#000000"
         android:textStyle="bold"
         android:textSize="18dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="countreset"
+        android:text="Reset Score"
+        android:textColor="#000000"
+        android:backgroundTint="#FFFF00"
         />
 
     <Space

@@ -8,6 +8,7 @@
     android:orientation="vertical"
     android:background="@drawable/linedpaper">
 
+    <!--this text view writes the title at the top of our screen in large bold font-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,7 +19,7 @@
         android:textColor="#000000"
         />
 
-
+    <!--this text view writes the names of all of the group members in regular font under the title-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,11 +29,13 @@
         android:textColor="#000000"
         />
 
+    <!--this adds a space between the group names and final score display of the app-->
     <Space
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         />
 
+    <!--this text view displays the participant's final score in bold font-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,7 +47,7 @@
         android:textStyle="bold"
         />
 
-
+    <!--this button allows you to submit your quiz to see your final score-->
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -52,35 +55,37 @@
         android:text="Submit Quiz"
         app:iconTint="#C52323"
         android:textColor="#000000"
-        android:backgroundTint="#FFFF00"
-        />
+        android:backgroundTint="#FFFF00"/>
 
-
+    <!--this text view writes the quiz instructions for the user-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Make sure to scroll down to see all questions, (use bottom half of screen to scroll), and once done with all 7 questions hit submit quiz to see results. Good luck!"
+        android:text="Make sure to scroll down to see all questions, (drag the bottom half of screen to scroll), and once done with all 7 questions hit submit quiz to see results. Good luck! Once satisfied hit the reset button!"
         android:gravity="center_horizontal"
         android:textColor="#000000"
         android:textStyle="bold"
         android:textSize="18dp"
         />
 
+    <!--this text view writes the title at the top of our screen in large font-->
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="countreset"
+        android:onClick="scoreset"
         android:text="Reset Score"
         android:textColor="#000000"
         android:backgroundTint="#FFFF00"
         />
 
+
+    <!--this adds space to help organize our page-->
     <Space
         android:layout_width="match_parent"
         android:layout_height="70dp"
         />
 
-
+    <!--this is what makes the bottom half of our page scrollable-->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -91,6 +96,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <!--the following code sets up one question on our app-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -145,12 +151,13 @@
                     />
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="50dp"
                     />
 
 
             </LinearLayout>
 
+            <!--the following code sets up one question on our app-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -201,12 +208,13 @@
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="50dp"
                     />
 
 
             </LinearLayout>
 
+            <!--the following code sets up one question on our app-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -258,12 +266,13 @@
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="50dp"
                     />
 
 
             </LinearLayout>
 
+            <!--the following code sets up one question on our app-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -312,11 +321,12 @@
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="50dp"
                     />
 
             </LinearLayout>
 
+            <!--the following code sets up one question on our app-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -367,11 +377,12 @@
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="50dp"
                     />
 
             </LinearLayout>
 
+            <!--the following code sets up one question on our app-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -420,11 +431,12 @@
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="50dp"
                     />
 
             </LinearLayout>
 
+            <!--the following code sets up one question on our app-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -487,3 +499,4 @@
 
 
 </LinearLayout>
+

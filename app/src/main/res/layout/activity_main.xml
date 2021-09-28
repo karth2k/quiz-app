@@ -8,6 +8,7 @@
     android:orientation="vertical"
     android:background="@drawable/linedpaper">
 
+
     <!--this text view writes the title at the top of our screen in large bold font-->
     <TextView
         android:layout_width="match_parent"
